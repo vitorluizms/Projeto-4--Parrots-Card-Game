@@ -6,13 +6,19 @@ body {
 }
 
 .container {
+    width:100%;
+    height:100%;
+    
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
 }
 .titulo {
     position: absolute;
     top: 40px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-size: 56px;
@@ -23,20 +29,40 @@ body {
     color: #75b79e;
 }
 
-.linha-carta {
-    width: auto;
+.linha-carta1 {
+    width: 1000px;
     height: auto;
+
     position: absolute;
     top: 150px;
     
     display: flex;
-    justify-content: center;
-    background-color: red;
+    justify-content: space-between;
+}
+.linha-carta2 {
+    width: 1000px;
+    height: auto;
+
+    position: absolute;
+    top: 330px;
+    
+    display: flex;
+    justify-content: space-between;
 }
 .carta {
     width: 117px;
-    height: 116px;
+    height: 146px;
 
     background: #A7E9AF;
+    border: 1px solid #99cea8;
     border-radius: 5px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta img {
+    width: 100px;
+    height: 100px;
+    background: url(front.png);
 }
