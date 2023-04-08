@@ -8,6 +8,7 @@ body {
 .container {
     width:100%;
     height:100%;
+    position: relative;
     
     display: flex;
     align-items: center;
@@ -29,40 +30,31 @@ body {
     color: #75b79e;
 }
 
-.linha-carta1 {
-    width: 1000px;
-    height: auto;
+.container-carta {
+    width: 989x;
+    height: 326px;
+    padding-left: 0px;
 
     position: absolute;
-    top: 150px;
+    top: 180px;
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-.linha-carta2 {
-    width: 1000px;
-    height: auto;
-
-    position: absolute;
-    top: 330px;
-    
-    display: flex;
-    justify-content: space-between;
+    background-color: red;
 }
 .carta {
     width: 117px;
     height: 146px;
+    margin-left: 34px;
 
     background: #A7E9AF;
-    border: 1px solid #99cea8;
+    border: 1px solid #99CEA8;
     border-radius: 5px;
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
-.carta img {
-    width: 100px;
-    height: 100px;
-    background: url(front.png);
+div img {
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
