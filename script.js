@@ -36,12 +36,12 @@ function qtdeCartas() {
     for (let i = 0; i < qtde; i++) {
         gerarCartas = document.querySelector(".container-carta")
         gerarCartas.innerHTML += ` 
-            <div class="carta" onclick = "virarCartas(this)">
+            <div class="carta" onclick = "virarCartas(this)" data-test="card">
                 <div class="front-face face">
-                    <img src="imagens/back.png" alt="">
+                    <img src="imagens/back.png" alt="" data-test= "face-down-image">
                 </div>
                 <div class="back-face face">
-                    <img src=${ListaDeImagens[i]}>
+                    <img src=${ListaDeImagens[i]} data-test= "face-up-image">
                 </div>
             </div>`
     }
