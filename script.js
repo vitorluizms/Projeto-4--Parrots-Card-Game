@@ -20,7 +20,7 @@ function qtdeCartas() {
     imagens.sort(comparador)
 
     const ListaDeImagens = []
-    qtde = Number(prompt("Escolha a quantidade de cartas(4 a 14"))
+    qtde = Number(prompt("Escolha a quantidade de cartas(4 a 14)"))
     while (qtde % 2 != 0 || qtde > 14 || qtde < 4) {
         qtde = prompt("Escolha a quantidade de cartas (4 a 14)")
     } 

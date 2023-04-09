@@ -34,7 +34,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: red;
 }
 .carta {
     width: 117px;
@@ -49,8 +48,8 @@ h1 {
 }
 
 img {
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
