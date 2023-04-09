@@ -48,7 +48,8 @@ h1 {
 }
 
 img {
-    width: 100px;
+    max-width: 100px;
+    width: 90%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -60,7 +61,7 @@ img {
 }
 
 .face {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-color: #A7E9AF;
     border-radius: 10px;
@@ -103,23 +104,35 @@ img {
 }
 
 @media (max-width: 425px) {
+    .texto {
+        height: 220px;
+        background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: center;
+    }
     h1 {
         font-size: 36px;
-        font-size: 36px;
+        font-weight: 700;
         line-height: 42px;
         text-align: center;
-        margin-right: 10px;
-        margin-left:10px;
+        letter-spacing: -0.4%;
+
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
     }
     .container {
         flex-direction: column;
         
     }
-    .container-cards div {
+    .container-carta div {
         flex-direction: column;
     }
-    .card {
-        margin-left: 40px;
-        margin-right: 40px;
+    .carta {
+        margin-left: 109px;
+        margin-right: 109px;
     }
 }
