@@ -6,6 +6,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.texto {
+    margin-top: 40px;
+    margin-bottom: 47px;
+}
+
 h1 {
     font-size: 56px;
     font-weight: 700;
@@ -15,8 +20,6 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 47px;
     
     color: #75b79e;
 }
@@ -105,8 +108,7 @@ img {
 
 @media (max-width: 425px) {
     .texto {
-        height: 220px;
-        background-color: red;
+        height: 63px;
         display: flex;
         flex-wrap: wrap;
 
@@ -126,6 +128,7 @@ img {
     }
     .container {
         flex-direction: column;
+        margin-top: 47px;
         
     }
     .container-carta div {
