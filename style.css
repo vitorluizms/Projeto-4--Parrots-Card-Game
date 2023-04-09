@@ -3,11 +3,10 @@
 }
 body {
     background-color: #eef9bf;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-size: 56px;
     font-weight: 700;
     line-height: 65px;
@@ -17,6 +16,7 @@ h1 {
     justify-content: center;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 47px;
     
     color: #75b79e;
 }
@@ -24,16 +24,17 @@ h1 {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container-carta {
-    max-width: 989px;
+    max-width: 906px;
     height: 100%;
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: red;
 }
 .carta {
     width: 117px;
@@ -41,10 +42,6 @@ h1 {
     position: relative;
     margin-right: 34px;
     margin-bottom: 34px;
-
-    background: #A7E9AF;
-    border: 1px solid #99CEA8;
-    border-radius: 5px;
 }
 
 .carta:hover {
@@ -52,10 +49,11 @@ h1 {
 }
 
 img {
-    min-height: 100px;
-    min-width: 100px;
     max-width: 100px;
     max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carta.transform {
