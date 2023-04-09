@@ -11,7 +11,7 @@ function comparador () {
     return Math.random() -0.5;
 }
 
-function qtdeCartas() {
+const qtdeCartas = () => {
     let gerarCartas;
     gerarCartas = document.querySelector(".container-carta")
     gerarCartas.innerHTML = ' ';
@@ -47,7 +47,7 @@ function qtdeCartas() {
     }
 }
 
-function virarCartas(elemento) {
+const virarCartas = (elemento) => {
     if (elemento.classList.contains("to-turn")) {
         return
     }
@@ -69,7 +69,7 @@ function virarCartas(elemento) {
         CompararCartas(imagem1, imagem2, elemento1, elemento)
     }
 
-    function CompararCartas(imagem1, imagem2, elemento1, elemento) {
+    const CompararCartas = (imagem1, imagem2, elemento1, elemento) => {
         if (imagem1 != imagem2) {
             setTimeout(function remover(){elemento.classList.remove('to-turn')
             elemento1.classList.remove("to-turn")} , 1000);
@@ -82,7 +82,7 @@ function virarCartas(elemento) {
     }
 }
 
-function FinalizarPartida() {
+const FinalizarPartida = () => {
     let qtdeToTurn = document.querySelectorAll(".carta.to-turn")
     if (qtdeToTurn.length == qtde) {
         alert(`Você ganhou em ${contador} jogadas!`)
@@ -90,7 +90,7 @@ function FinalizarPartida() {
     }
 }
 
-function reiniciarPartida(){
+const reiniciarPartida = () => {
     let resposta = prompt("Quer reiniciar a partida? (sim ou não)")
     while (resposta !== 'não' && resposta !== 'sim') {
         resposta= prompt("Quer reiniciar a partida? (sim ou não)")
