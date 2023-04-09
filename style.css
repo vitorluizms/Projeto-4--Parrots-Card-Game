@@ -95,3 +95,31 @@ img {
     display: flex;
 }
 
+@media (max-width:1024px) {
+    .card {
+        margin-left: 34px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 36px;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left:10px;
+    }
+    .container {
+        flex-direction: column;
+        
+    }
+    .container-cards div {
+        flex-direction: column;
+    }
+    .card {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
